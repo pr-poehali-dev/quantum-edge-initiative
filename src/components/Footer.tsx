@@ -5,9 +5,9 @@ export function Footer() {
         <div className="grid md:grid-cols-12 gap-12">
           {/* Logo & Tagline */}
           <div className="md:col-span-4">
-            <p className="font-serif text-2xl tracking-wide text-foreground mb-4">Wabi</p>
+            <p className="font-serif text-2xl tracking-wide text-foreground mb-4">Спокойно</p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Японский минимализм в сочетании со скандинавским теплом.
+              Помощник выпускника. Техники управления стрессом перед экзаменами.
             </p>
           </div>
 
@@ -16,45 +16,42 @@ export function Footer() {
             <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Навигация</p>
             <nav className="flex flex-col gap-3">
               <a href="#philosophy" className="text-sm text-foreground hover:text-sage transition-colors">
-                Философия
+                О стрессе
               </a>
               <a href="#services" className="text-sm text-foreground hover:text-sage transition-colors">
-                Услуги
+                Техники
               </a>
               <a href="#process" className="text-sm text-foreground hover:text-sage transition-colors">
-                Процесс
+                По срокам
               </a>
               <a href="#contact" className="text-sm text-foreground hover:text-sage transition-colors">
-                Контакты
+                Поддержка
+              </a>
+            </nav>
+          </div>
+
+          {/* Extra */}
+          <div className="md:col-span-2">
+            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Экстренно</p>
+            <nav className="flex flex-col gap-3">
+              <a href="tel:88002000122" className="text-sm text-foreground hover:text-sage transition-colors">
+                Телефон доверия
+              </a>
+              <a href="#contact" className="text-sm text-foreground hover:text-sage transition-colors">
+                Быстрая техника
               </a>
             </nav>
           </div>
 
           {/* Social */}
           <div className="md:col-span-2">
-            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Соцсети</p>
+            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Поделись</p>
             <nav className="flex flex-col gap-3">
               <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Instagram
-              </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Pinterest
+                ВКонтакте
               </a>
               <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
                 Telegram
-              </a>
-            </nav>
-          </div>
-
-          {/* Legal */}
-          <div className="md:col-span-2">
-            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Документы</p>
-            <nav className="flex flex-col gap-3">
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Политика
-              </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Условия
               </a>
             </nav>
           </div>
@@ -63,9 +60,9 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Wabi Studio. Все права защищены.
+            &copy; {new Date().getFullYear()} Спокойно. Ты справишься.
           </p>
-          <p className="text-xs text-muted-foreground">Создано с намерением</p>
+          <p className="text-xs text-muted-foreground">Создано с заботой о выпускниках</p>
         </div>
       </div>
     </footer>

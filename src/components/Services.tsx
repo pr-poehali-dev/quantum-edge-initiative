@@ -2,54 +2,42 @@ import { useEffect, useRef, useState } from "react"
 
 const services = [
   {
-    title: "Жилые интерьеры",
-    description: "Полное преображение дома с учётом вашего образа жизни. От отдельных комнат до целых резиденций.",
+    title: "Дыхание 4-7-8",
+    description:
+      "Вдох на 4 счёта — задержка на 7 — выдох на 8. Повторить 3–4 раза. Снижает уровень кортизола за 2 минуты. Работает в любом месте, даже в туалете перед экзаменом.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-        />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v1m0 14v1m-7-8H4m16 0h-1M6.34 6.34l-.71-.71m12.73 12.73l-.71-.71M6.34 17.66l-.71.71M18.36 5.64l-.71.71M12 8a4 4 0 100 8 4 4 0 000-8z" />
       </svg>
     ),
   },
   {
-    title: "Планировка",
-    description: "Продуманные решения, создающие естественный поток и функциональные зоны для жизни, работы и отдыха.",
+    title: "Метод «5-4-3-2-1»",
+    description:
+      "Назови 5 вещей, которые видишь → 4 звука, которые слышишь → 3 ощущения на коже → 2 запаха → 1 вкус. Мгновенно возвращает в настоящий момент и выключает панику.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
-        />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
       </svg>
     ),
   },
   {
-    title: "Подбор материалов",
-    description: "Натуральные материалы и авторские предметы ручной работы, которые красиво стареют и рассказывают историю.",
+    title: "Прогрессивная релаксация",
+    description:
+      "Напрягай каждую группу мышц на 5 секунд и резко расслабляй — от стоп к голове. 10 минут перед сном снимают накопленное напряжение и улучшают качество сна в период подготовки.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-        />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
       </svg>
     ),
   },
   {
-    title: "Светодизайн",
-    description: "Многоуровневое освещение, меняющееся в течение дня, создающее атмосферу и поддерживающее благополучие.",
+    title: "Техника «Стоп-мысль»",
+    description:
+      "Когда накатывает «я провалюсь» — громко или мысленно скажи «Стоп». Потом переформулируй: «Я готовился. Я знаю материал. Я справлюсь с этим заданием». Повтори 3 раза.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-        />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
       </svg>
     ),
   },
@@ -86,14 +74,14 @@ export function Services() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Наши услуги
+            Основные техники
           </p>
           <h2
             className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground text-balance transition-all duration-1000 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Что мы делаем
+            Работает прямо сейчас
           </h2>
         </div>
 
